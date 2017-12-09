@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require './lib/csv_reader'
+
+# puts CsvReader.call(STDIN.read.chomp.split("\n"))
+
+puts CsvReader.call
