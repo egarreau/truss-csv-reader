@@ -1,6 +1,10 @@
-module CsvReader
+require_relative 'csv_reader/row_parser'
 
-  def self.call
-    "hello"
+class CsvReader
+
+  def initialize(csv)
+    @csv = csv.map do |row|
+      STDOUT.puts RowParser.call(row)
+    end
   end
 end
